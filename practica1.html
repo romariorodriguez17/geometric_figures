@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/DOM/practicaDOM/style.css">
+    <title>Figuras Geometricas</title>
+</head>
+<body>
+    <!-- encabezado -->
+    <header class="header">
+  <h1 class="header-title"> Figuras Geometricas </h1>
+<p class="header-description"> Calcular diferentes medidas de figuras geometricas como área y perímetro.</p>
+    </header>
+    <!-- Respuesta -->
+    <div class="answer">
+<p id="result"> </p>
+</div>
+
+<!-- Seccion de Cajas -->
+    <section class="figure">
+<div class="box">
+    <div class="box-header">
+        <h2>Cuadrado</h2>
+    </div>
+    <div class="box-main">
+        <p class="box-main_text">¿Cuanto mide cada lado de tu cuadrado?</p>
+        <input type="number" name="inputSide" id="inputSide" placeholder="Ingrese el valor " class="box-main_input">
+        <button type="button" class="box-main_btn" onclick="calPerimetroSquare()"> Perimetro</button>
+        <button type="button" class="box-main_btn" onclick="calAreaSquare()"> Área</button>
+    </div>
+    
+</div>
+<div class="box">
+    <div class="box-header">
+        <h2>Triangulo</h2>
+    </div>
+    <div class="box-main">
+        <p class="box-main_text">¿Cuanto mide cada lado de tu Triangulo ?</p>
+        <input 
+        type="number" 
+        name="inputSide1" 
+        id="inputSide1" 
+        placeholder="Ingrese lado 01 " 
+        class="box-main_input">
+        <input 
+        type="number" 
+        name="inputSide2" 
+        id="inputSide2" 
+        placeholder="Ingrese lado 02 " 
+        class="box-main_input">
+        <input 
+        type="number" 
+        name="inputSide3" 
+        id="inputSide3" 
+        placeholder="Ingrese la Base " 
+        class="box-main_input">
+        <button type="button" class="box-main_btn " onclick="calPerTriangle()"> Perimetro</button>
+        <p class="box-main_text">¿Cuanto mide base y altura de tu Triangulo ?</p>
+        <input 
+        type="number" 
+        name="inputBase" 
+        id="inputBase" 
+        placeholder="Ingrese base " 
+        class="box-main_input">
+        <input 
+        type="number" 
+        name="inputHeight" 
+        id="inputHeight" 
+        placeholder="Ingrese altura " 
+        class="box-main_input">
+        <button type="button" class="box-main_btn" onclick="calAreaTriangle()"> Área</button>
+    </div>
+    
+</div>
+<div class="box">
+    <div class="box-header">
+        <h2>Circulo</h2>
+    </div>
+    <div class="box-main">
+        <p class="box-main_text"> ¿Cuanto mide el radio de tu Circulo? </p>
+        <input
+         type="number"
+         name="inputRadio" 
+         id="inputRadio" 
+         placeholder="Ingrese el radio " 
+         class="box-main_input">
+
+    <button type="button" class="box-main_btn" onclick="calculateDiameCircle()"> Diametro</button>
+        <button type="button" class="box-main_btn" onclick="  calculatePerimCircle()"> Perimetro</button>
+        <button type="button" class="box-main_btn" onclick="calculateAreaCircle()"> Área</button>
+    </div>
+    
+</div>
+    </section>
+    <script src="/DOM/practicaDOM/js/calculos.js"></script>
+</body>
+</html>
